@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Form</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<h1>Form for pupil</h1> <hr>
+		<form>	
+			<label>
+				<span>Vase ime: </span>
+				<input type = "text" required name = "ime">
+			</label>
+
+			<label>
+				<span>Vase prezime: </span>
+				<input type = "text" required name = "prezime">
+			</label>
+
+			<label>
+				<span>Godina rođenja: </span>
+				<input type = "number" required>
+			</label>
+
+			<label id = 'spol'>
+				<span id = "pol">Pol: </span>
+				<div id = 'muski'> Muski <input type = "radio" name = "pol" value="muski"></div>
+				<div id = 'zenski'> Ženski <input type = "radio" name = "pol" value="zenski"></div>
+			</label>
+
+			<label id = 'predmet'>
+				<span id = 'zanimacija'>Omiljen predmet: </span>
+				<div class = 'predmet'>Matematika<input  type = "checkbox"></div>
+				<div class = 'predmet'>Tjelesni<input type = "checkbox"></div>
+				<div class = 'predmet'>Likovno<input type = "checkbox"></div>
+				<input type="text" placeholder="Nesto drugo">
+			</label>
+
+			<label>
+				<span>Razred: </span>
+				<select>
+					<option>1.</option>
+					<option>2.</option>
+					<option>3.</option>
+					<option>4.</option>
+				</select>
+			</label>
+
+			<button>Submit</button>	
+		</form>
+
+		<script src = "main.js"></script>
+	</body>
+</html>

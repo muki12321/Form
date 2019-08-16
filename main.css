@@ -1,0 +1,55 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	text-align: center;
+}
+form{
+	width: 500px;
+	height: 500px;
+	background-color: gray;
+	margin: 20px auto;
+}
+form label{
+	display: block;
+	padding: 13px;
+	font-size: 1.5em;
+
+}
+form label span{
+	width: 30%
+}
+form label input{
+	width: 65%;
+	float: right;
+}
+button{
+	background-color: orange;
+	float: right;
+	margin-top: 100px;
+	margin-right: 0: 
+}
+#spol{
+	font-size: 1em;	
+}
+#pol{
+	font-size: 1.5em;
+}
+#muski, #zenski{
+	display: inline-block;
+	text-align: center;
+	width: 40%;
+	float: right;
+}
+#predmet{
+	font-size: 1em;
+	float: none;
+}
+#zanimacija{
+	font-size: 1.5em;
+}
+.predmet{
+
+	float: none;
+}
