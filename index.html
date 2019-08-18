@@ -7,48 +7,62 @@
 	</head>
 	<body>
 		<h1>Form for pupil</h1> <hr>
-		<form>	
+
+
+
+
+		<div id='forma'>
 			<label>
 				<span>Vase ime: </span>
-				<input type = "text" required name = "ime">
+				<input type = "text"  name = "ime">
 			</label>
 
 			<label>
 				<span>Vase prezime: </span>
-				<input type = "text" required name = "prezime">
+				<input type = "text"  name = "prezime">
 			</label>
 
 			<label>
 				<span>Godina rođenja: </span>
-				<input type = "number" required>
+				<input name='godina' type = "number" >
 			</label>
 
-			<label id = 'spol'>
-				<span id = "pol">Pol: </span>
-				<div id = 'muski'> Muski <input type = "radio" name = "pol" value="muski"></div>
-				<div id = 'zenski'> Ženski <input type = "radio" name = "pol" value="zenski"></div>
-			</label>
+		
+			<span id = "pol">Pol: </span>
+			<div id = 'muski'> Muski <input type = "radio" name = "pol" value="muski"></div>
+			<div id = 'zenski'> Ženski <input type = "radio" name = "pol" value="zenski"></div>
+			
 
-			<label id = 'predmet'>
+			<div>
+				
 				<span id = 'zanimacija'>Omiljen predmet: </span>
-				<div class = 'predmet'>Matematika<input  type = "checkbox"></div>
-				<div class = 'predmet'>Tjelesni<input type = "checkbox"></div>
-				<div class = 'predmet'>Likovno<input type = "checkbox"></div>
-				<input type="text" placeholder="Nesto drugo">
-			</label>
+				<div class="predmetWrapper">
+					
+					<div class = 'predmet'>Matematika</div>
+					<input name='Matematika' type = "checkbox">
+					
+					<div class = 'predmet'>Tjelesni</div>
+					<input name='Tjelesni' type = "checkbox">
+					
+					<div class = 'predmet'>Likovno</div>
+					<input name='Likovno' type = "checkbox">
+				
+				</div>
 
+			</div>
+				
 			<label>
 				<span>Razred: </span>
-				<select>
-					<option>1.</option>
-					<option>2.</option>
-					<option>3.</option>
-					<option>4.</option>
+				<select name='razred'>
+					<option value="1">1.</option>
+					<option value="2">2.</option>
+					<option value="3">3.</option>
+					<option value="4">4.</option>
 				</select>
 			</label>
 
-			<button>Submit</button>	
-		</form>
+			<button id='submit'>Submit</button>	
+		</div>
 
 		<script src = "main.js"></script>
 	</body>

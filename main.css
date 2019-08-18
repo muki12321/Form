@@ -5,30 +5,27 @@ html,body{
 h1{
 	text-align: center;
 }
-form{
+#forma{
 	width: 500px;
-	height: 500px;
+	height: 450px;
 	background-color: gray;
 	margin: 20px auto;
 }
-form label{
+#forma label{
 	display: block;
-	padding: 13px;
 	font-size: 1.5em;
+	padding: 14px 25px;
+}
 
-}
-form label span{
-	width: 30%
-}
-form label input{
-	width: 65%;
+#forma label input[type=text],form label input[type=number]  {
+	width: 55%;
 	float: right;
 }
 button{
 	background-color: orange;
-	float: right;
-	margin-top: 100px;
-	margin-right: 0: 
+	position: relative;
+	top: 42px;
+    left: 403px;
 }
 #spol{
 	font-size: 1em;	
@@ -36,20 +33,33 @@ button{
 #pol{
 	font-size: 1.5em;
 }
-#muski, #zenski{
+#muski, #zenski, #pol{
 	display: inline-block;
-	text-align: center;
-	width: 40%;
-	float: right;
+	    margin: 0 25px;
 }
 #predmet{
 	font-size: 1em;
-	float: none;
 }
 #zanimacija{
 	font-size: 1.5em;
 }
 .predmet{
+	display: inline-block;
+	width: 51%;
+}
 
-	float: none;
+.predmetWrapper {
+	width: 52%;
+	position: relative;
+    top: -20px;
+    left: 198px;
+}
+
+
+.in {
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	margin:10px;
+	background: #ddd;
 }
